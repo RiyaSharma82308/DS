@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Trees</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .navbar {
+            /* border: 4px solid red; */
+            height: 500px;
+            background-color: rgb(37, 5, 5);
+            margin-top: 0px;
+        }
+
+        #types {
+            /* border: 2px solid black; */
+            /* background-color: blueviolet; */
+            padding: 20px 20px;
+            display: flex;
+            margin-left: 220px;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+
+        .structures li {
+            /* border: 2px solid green; */
+            /* display: inline; */
+            list-style: none;
+            margin: 30px 30px;
+            font-size: 30px;
+            width: 5%;
+            margin: 0px;
+            /* justify-content: space-evenly; */
+        }
+
+        .structures #b {
+            display: flex;
+            /* border: 4px solid yellow ; */
+
+            width: 60%;
+            flex-direction: row-reverse;
+        }
+
+        .structures #a {
+            /* border: 2px solid black; */
+            text-decoration: none;
+            text-align: center;
+            font-size: 35px;
+            color: black;
+            background-color: rgb(216, 141, 2);
+            border-radius: 10px;
+            height: 50px;
+            width: max-content;
+            padding: 10px 30px;
+
+        }
+
+        .structures li a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+
+        .structures li a:hover {
+            color: rgb(102, 3, 102);
+        }
+
+        .structures li a:active {
+            color: yellow;
+        }
+        .hi {
+            /* border: 4px solid forestgreen; */
+            display: flex;
+            flex-flow: column wrap;
+            align-self: center;
+            margin-top: 100px;
+        }
+
+        .hi p {
+            /* border: 4px solid orangered; */
+            display: block;
+            font-size: 70px;
+            color: azure;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            margin: 0px 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin: 40px 170px;
+            /* justify-content: space-between; */
+            align-items: center;
+            justify-content: center;
+            /* margin-left: 30% */
+        }
+
+        .container .first {
+            /* border: 4px solid red; */
+            font-size: 70px;
+            font-style: italic;
+            height: fit-content;
+            width: 400px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 30px;
+
+        }
+        .con1 #extra{
+            /* border: 2px solid blue; */
+            display: flex;
+            /* flex-flow: column wrap; */
+            justify-content: center;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 50px;
+            font-size: 25px;
+        }
+        .container .second {
+            /* border: 2px solid green; */
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 20px;
+            width: 500px;
+        }
+
+        .con2 {
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: center;
+            /* display: flex; */
+
+        }
+
+        .con2 img {
+            height: 400px;
+        }
+        .con4 {
+            /* border: 2px solid red; */
+            margin: 20px;
+            display: flex;
+            flex-flow: column wrap;
+            width: 1790px;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .con4 #c4 {
+            /* border: 2px solid rgb(243, 207, 252);; */
+            background-color: rgb(255, 234, 245);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .con4 h3 {
+            /* border: 2px solid green; */
+            font-size: 35px;
+        }
+
+        .con4 #doll p {
+            /* border: 2px solid red; */
+            margin: 4px;
+            font-size: 30px;
+            /* display: flex; */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="structures">
+            <ul id="types">
+                <li><a href="/1.html" target="_blank">About</a> </li>
+                <li><a href="/2.html" target="_blank">linked lists</a> </li>
+                <li><a href="/3.html" target="_blank">stacks</a> </li>
+                <li><a href="/4.html">binary trees</a> </li>
+                <li><a href="/5.html" target="_blank">graphs</a></li>
+                <span id="b">
+                    <a href="" id="a">Lets Learn More</a>
+                </span>
+            </ul>
+        </div>
+        <div class="hi">
+            <p> <strong>Binary Trees</strong></p>
+        </div>
+    </nav>
+    <div class="con1">
+        <div class="container">
+            <div class="first">
+                What is a Binary Tree ?
+            </div>
+            <div class="second">
+                Binary Tree is defined as a tree data structure where each node has at most 2 children. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+            </div>
+        </div>
+        <div class="con2">
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png"
+                alt="error in loading image">
+        </div>
+    </div>
+    <div class="con4">
+        <div id="c4">
+            <h3>Binary Tree Representation :-</h3>
+            <div id="doll">
+                <p>A Binary tree is represented by a pointer to the topmost node (commonly known as the “root”) of the tree. If the tree is empty, then the value of the root is NULL. Each node of a Binary Tree contains the following parts:</p>
+                <p><strong>* &nbsp</strong> Data</p>
+                <p><strong>* &nbsp</strong> Pointer to left child</p>
+                <p><strong>* &nbsp</strong> Pointer to right child.</p>
+            </div>
+        </div>
+    </div>
+    <div class="con4">
+        <div id="c4">
+            <h3>Basic Operation On Binary Tree :-</h3>
+            <div id="doll">
+                <p><strong>* &nbsp</strong> Inserting an element.</p>
+                <p><strong>* &nbsp</strong> Removing an element.</p>
+                <p><strong>* &nbsp</strong> Searching for an element.</p>
+                <p><strong>* &nbsp</strong> Traversing the tree</p>
+            </div>
+        </div>
+    </div>
+    <div class="con4">
+        <div id="c4">
+            <h3>Auxiliary Operation On Binary Tree :-</h3>
+            <div id="doll">
+                <p><strong>* &nbsp</strong> Finding the height of the tree.</p>
+                <p><strong>* &nbsp</strong> Find the level of a node of the tree.</p>
+                <p><strong>* &nbsp</strong> Finding the size of the entire tree.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
